@@ -19,7 +19,7 @@
     ]
   },
   "env": {
-    "ANTHROPIC_BASE_URL": "http://qwen3_coder-rhaiis.ai.svc.cluster.local:8000",
+    "ANTHROPIC_BASE_URL": "http://qwen3-coder-rhaiis.ai.svc.cluster.local:8000",
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "qwen3_coder",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "qwen3_coder",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "qwen3_coder",
@@ -27,9 +27,9 @@
     "CLAUDE_CODE_SKIP_AUTH_LOGIN": 1,
     "CLAUDE_CODE_ENABLE_TELEMETRY": "0",
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
-    "CLAUDE_CODE_ATTRIBUTION_HEADER" : "0"
+    "CLAUDE_CODE_ATTRIBUTION_HEADER": "0"
   },
-  "prefersReducedMotion" : true,
-  "terminalProgressBarEnabled" : false,
-  "effortLevel" : "high"
+  "prefersReducedMotion": true,
+  "terminalProgressBarEnabled": false,
+  "effortLevel": "high"
 }
