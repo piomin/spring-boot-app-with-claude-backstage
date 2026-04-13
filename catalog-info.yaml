@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: spring-boot-app-with-claude-backstage
+  title: spring-boot-app-with-claude-backstage
+  annotations:
+    janus-idp.io/tekton: spring-boot-app-with-claude-backstage
+    tektonci/build-namespace: demo
+    tekton.dev/cicd : "true"
+    quay.io/repository-slug: pminkows/spring-boot-app-with-claude-backstage
+    github.com/project-slug: piomin/spring-boot-app-with-claude-backstage
+    sonarqube.org/project-key: piomin_spring-boot-app-with-claude-backstage
+    backstage.io/kubernetes-id: spring-boot-app-with-claude-backstage
+    backstage.io/techdocs-ref: dir:.
+    argocd/app-name: spring-boot-app-with-claude-backstage
+    prometheus.io/rule: container_memory_usage_bytes{pod=~"spring-boot-app-with-claude-backstage-.*"}|pod,rate(container_cpu_usage_seconds_total{pod=~"spring-boot-app-with-claude-backstage-.*"}[5m])|pod
+  links:
+    - url: https://devspaces.apps.piomin-2.ata9.p1.openshiftapps.com#https://github.com/piomin/spring-boot-app-with-claude-backstage
+      title: 🚀 Develop App
+      icon: launch
+  tags:
+    - spring-boot
+    - java
+    - maven
+    - tekton
+    - argocd
+spec:
+  type: service
+  owner: piomin
+  lifecycle: experimental
